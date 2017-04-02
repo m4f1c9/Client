@@ -37,6 +37,10 @@ public class ClientReader implements Runnable {
             }
         } catch (IOException ex) {
             JOptionPane.showMessageDialog(ClientMainWindow.getFrame(), "Что-то сломалось с той стороны");
+            readTextArea.append("----------------------------------------------");
+            readTextArea.append("Все сломалось");
+            readTextArea.append("----------------------------------------------");
+            readTextArea.append("\n");
         }
     }
 
