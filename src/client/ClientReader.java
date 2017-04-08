@@ -28,7 +28,7 @@ public class ClientReader implements Runnable {
             String in;
             while ((in = reader.readLine()) != null) {
                 synchronized (readTextArea) {
-                    readTextArea.append("client > ");
+                    readTextArea.append("server > ");
                     readTextArea.append(new Date().toString() + "  ");
                     readTextArea.append(in);
                     readTextArea.append("\n");
